@@ -5,8 +5,8 @@ const mongoDBConnect = (url) => {
     .then(() => {
         console.log('mongodb connected');
     })
-    .catch(() => {
-        console.log('DB connection failed');
+    .catch((error) => {
+        console.log('DB connection failed', error);
     })
 }
 
