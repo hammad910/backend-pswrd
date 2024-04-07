@@ -5,7 +5,7 @@ import signRoute from './routes/signUp.js'
 import {router} from './routes/staticRoutes.js'
 import 'dotenv/config'
 
-mongoDBConnect(process.env.MONGODB_URI)
+mongoDBConnect("mongodb://localhost:27017/signup")
 
 
 const app = express()
